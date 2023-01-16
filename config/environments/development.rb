@@ -11,6 +11,13 @@ Rails.application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
 
+  # _______________ A CHANGER ICI POUR PRODUCTION
+
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  # _______________
+
+
   # Show full error reports.
   config.consider_all_requests_local = true
 
@@ -58,6 +65,9 @@ Rails.application.configure do
 
   # Suppress logger output for asset requests.
   config.assets.quiet = true
+
+  config.i18n.fallbacks = [:fr]
+
 
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
