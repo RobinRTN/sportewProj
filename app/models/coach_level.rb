@@ -1,0 +1,2 @@
+class CoachLevel < ApplicationRecord
+end
